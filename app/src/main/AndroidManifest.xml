@@ -24,7 +24,8 @@
             android:label="@string/title_activity_overlay"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity android:name=".ListView.ListViewActivity" />
-        <activity android:name=".Layout.LinearLayoutActivity"></activity>
+        <activity android:name=".Layout.LinearLayoutActivity" />
+        <activity android:name=".Ripple.RippleActivity"></activity>
     </application>
 
 </manifest>

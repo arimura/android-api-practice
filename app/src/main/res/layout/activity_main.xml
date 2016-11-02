@@ -24,8 +24,20 @@
         android:layout_height="wrap_content"
         android:text="list view"
         android:id="@+id/buttonListView"
+        android:onClick="clickListView"
         android:layout_below="@+id/buttonOverlay"
         android:layout_alignRight="@+id/buttonOverlay"
-        android:layout_alignEnd="@+id/buttonOverlay"
-        android:onClick="clickListView" />
+        android:layout_alignEnd="@+id/buttonOverlay" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ripple"
+        android:id="@+id/buttonRipple"
+        android:layout_below="@+id/buttonListView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="clickRipple"
+        android:layout_alignRight="@+id/buttonListView"
+        android:layout_alignEnd="@+id/buttonListView" />
 </RelativeLayout>

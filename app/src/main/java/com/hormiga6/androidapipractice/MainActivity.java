@@ -8,6 +8,7 @@ import android.view.View;
 import com.hormiga6.androidapipractice.ActivityOverlay.BaseActivity;
 import com.hormiga6.androidapipractice.Layout.LinearLayoutActivity;
 import com.hormiga6.androidapipractice.ListView.ListViewActivity;
+import com.hormiga6.androidapipractice.MultiTypeList.MultiTypeListActivity;
 import com.hormiga6.androidapipractice.Ripple.RippleActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickRipple(View view){
         Intent intent = new Intent(this, RippleActivity.class);
+        startActivity(intent);
+    }
+
+    public void clickMultiTypeListView(View view){
+        Intent intent = new Intent(this, MultiTypeListActivity.class);
         startActivity(intent);
     }
 }

@@ -25,7 +25,8 @@
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity android:name=".ListView.ListViewActivity" />
         <activity android:name=".Layout.LinearLayoutActivity" />
-        <activity android:name=".Ripple.RippleActivity"></activity>
+        <activity android:name=".Ripple.RippleActivity" />
+        <activity android:name=".MultiTypeList.MultiTypeListActivity"></activity>
     </application>
 
 </manifest>

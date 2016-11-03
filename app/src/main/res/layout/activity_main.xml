@@ -40,4 +40,15 @@
         android:onClick="clickRipple"
         android:layout_alignRight="@+id/buttonListView"
         android:layout_alignEnd="@+id/buttonListView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multi Type List View"
+        android:id="@+id/buttonMultiTypeListView"
+        android:layout_below="@+id/buttonRipple"
+        android:layout_alignRight="@+id/buttonRipple"
+        android:layout_alignEnd="@+id/buttonRipple"
+        android:onClick="clickMultiTypeListView"
+        />
 </RelativeLayout>

@@ -6,9 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.hormiga6.androidapipractice.ActivityOverlay.BaseActivity;
+import com.hormiga6.androidapipractice.Drawable.DrawableActivity;
 import com.hormiga6.androidapipractice.Layout.LinearLayoutActivity;
 import com.hormiga6.androidapipractice.ListView.ListViewActivity;
 import com.hormiga6.androidapipractice.MultiTypeList.MultiTypeListActivity;
+import com.hormiga6.androidapipractice.NavigationDrawer.DrawerActivity;
 import com.hormiga6.androidapipractice.Ripple.RippleActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -41,6 +43,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickMultiTypeListView(View view){
         Intent intent = new Intent(this, MultiTypeListActivity.class);
+        startActivity(intent);
+    }
+
+    public void clickDrawable(View view){
+        Intent intent = new Intent(this, DrawableActivity.class);
+        startActivity(intent);
+    }
+
+    public void clickDrawer(View view){
+        Intent intent = new Intent(this, DrawerActivity.class);
         startActivity(intent);
     }
 }

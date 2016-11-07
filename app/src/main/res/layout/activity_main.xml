@@ -51,4 +51,15 @@
         android:layout_alignEnd="@+id/buttonRipple"
         android:onClick="clickMultiTypeListView"
         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drawable"
+        android:id="@+id/buttonDrawable"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="clickDrawable"
+        />
 </RelativeLayout>

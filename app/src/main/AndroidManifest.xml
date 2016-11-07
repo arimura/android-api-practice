@@ -26,7 +26,8 @@
         <activity android:name=".ListView.ListViewActivity" />
         <activity android:name=".Layout.LinearLayoutActivity" />
         <activity android:name=".Ripple.RippleActivity" />
-        <activity android:name=".MultiTypeList.MultiTypeListActivity"></activity>
+        <activity android:name=".MultiTypeList.MultiTypeListActivity" />
+        <activity android:name=".Drawable.DrawableActivity"></activity>
     </application>
 
 </manifest>

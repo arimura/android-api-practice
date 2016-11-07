@@ -57,9 +57,18 @@
         android:layout_height="wrap_content"
         android:text="Drawable"
         android:id="@+id/buttonDrawable"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:onClick="clickDrawable"
-        />
+        android:layout_below="@+id/buttonMultiTypeListView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drawer"
+        android:id="@+id/buttonDrawer"
+        android:layout_below="@+id/buttonDrawable"
+        android:layout_alignLeft="@+id/buttonListView"
+        android:layout_alignStart="@+id/buttonListView"
+        android:onClick="clickDrawer" />
 </RelativeLayout>

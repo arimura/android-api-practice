@@ -27,7 +27,11 @@
         <activity android:name=".Layout.LinearLayoutActivity" />
         <activity android:name=".Ripple.RippleActivity" />
         <activity android:name=".MultiTypeList.MultiTypeListActivity" />
-        <activity android:name=".Drawable.DrawableActivity"></activity>
+        <activity android:name=".Drawable.DrawableActivity" />
+        <activity
+            android:name=".NavigationDrawer.DrawerActivity"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

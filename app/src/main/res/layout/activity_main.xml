@@ -71,4 +71,14 @@
         android:layout_alignLeft="@+id/buttonListView"
         android:layout_alignStart="@+id/buttonListView"
         android:onClick="clickDrawer" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress Bar"
+        android:id="@+id/buttonProgressBar"
+        android:layout_below="@+id/buttonDrawer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="clickProgressBar"/>
 </RelativeLayout>

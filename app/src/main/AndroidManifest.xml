@@ -32,7 +32,9 @@
             android:name=".NavigationDrawer.DrawerActivity"
             android:label="@string/title_activity_drawer"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ProgressBar.ProgressBarActivity"></activity>
+        <activity android:name=".ProgressBar.ProgressBarActivity" />
+        <activity android:name=".ActivityResult.StartActivity" />
+        <activity android:name=".ActivityResult.ResultActivity"></activity>
     </application>
 
 </manifest>

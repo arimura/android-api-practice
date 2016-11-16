@@ -65,9 +65,8 @@ public class DrawerActivity extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+        //This method id called when button in options menu(three dot menu item) is clicked.
+        //https://developer.android.com/guide/topics/ui/menus.html#options-menu
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement

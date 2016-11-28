@@ -8,6 +8,9 @@ import org.json.JSONObject;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static org.hamcrest.CoreMatchers.any;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
@@ -42,5 +45,15 @@ public class JSONObjectTest {
     public void getWithNotExistigKey() throws JSONException {
         JSONObject jsonObject = new JSONObject("{key_outer:{key_inner:\"val\"}}");
         jsonObject.getString("hoge");
+    }
+
+    @Test
+    public void mapToJson(){
+        Map<String, ?> map = new HashMap<String, Object>(){{
+            put("key1",false);
+            put("key2","false");
+        }};
+        JSONObject json = new JSONObject(map);
+        assertThat(json.toString(), is("{\"key2\":\"false\",\"key1\":false}"));
     }
 }

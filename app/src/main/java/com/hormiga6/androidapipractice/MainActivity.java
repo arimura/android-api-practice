@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.hormiga6.androidapipractice.ActivityOverlay.BaseActivity;
 import com.hormiga6.androidapipractice.ActivityResult.StartActivity;
+import com.hormiga6.androidapipractice.Application.ContextCheckActivity1;
 import com.hormiga6.androidapipractice.Drawable.DrawableActivity;
 import com.hormiga6.androidapipractice.Layout.LinearLayoutActivity;
 import com.hormiga6.androidapipractice.ListView.ListViewActivity;
@@ -65,6 +66,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickActivityResult(View view){
         Intent intent = new Intent(this, StartActivity.class);
+        startActivity(intent);
+    }
+
+    public void clickContext(View view){
+        Intent intent = new Intent(this, ContextCheckActivity1.class);
         startActivity(intent);
     }
 }

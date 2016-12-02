@@ -3,6 +3,7 @@
     package="com.hormiga6.androidapipractice">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -35,7 +36,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ProgressBar.ProgressBarActivity" />
         <activity android:name=".ActivityResult.StartActivity" />
-        <activity android:name=".ActivityResult.ResultActivity"></activity>
+        <activity android:name=".ActivityResult.ResultActivity" />
+        <activity android:name=".Application.ContextCheckActivity1"></activity>
     </application>
 
 </manifest>

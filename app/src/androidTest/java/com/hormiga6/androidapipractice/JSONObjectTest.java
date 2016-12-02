@@ -15,9 +15,6 @@ import static org.hamcrest.CoreMatchers.any;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-/**
- * Created by kotaro.arimura on 2016/10/27.
- */
 @RunWith(AndroidJUnit4.class)
 @SmallTest
 public class JSONObjectTest {

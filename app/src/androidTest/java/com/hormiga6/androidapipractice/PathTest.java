@@ -18,10 +18,6 @@ import java.util.Collection;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
-/**
- * Created by kotaro.arimura on 2016/11/22.
- */
-
 @RunWith(AndroidJUnit4.class)
 @SmallTest
 public class PathTest {

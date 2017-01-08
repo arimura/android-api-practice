@@ -16,7 +16,22 @@ import com.hormiga6.androidapipractice.NavigationDrawer.DrawerActivity;
 import com.hormiga6.androidapipractice.ProgressBar.ProgressBarActivity;
 import com.hormiga6.androidapipractice.Ripple.RippleActivity;
 
+import java.util.HashMap;
+
 public class MainActivity extends AppCompatActivity {
+
+    private HashMap<String, Class> dispatchMap = new HashMap<String, Class>() {{
+        put("BaseActivity", BaseActivity.class);
+        put("ListViewActivity", ListViewActivity.class);
+        put("LinearLayoutActivity", LinearLayoutActivity.class);
+        put("RippleActivity", RippleActivity.class);
+        put("MultiTypeListActivity", MultiTypeListActivity.class);
+        put("DrawableActivity", DrawableActivity.class);
+        put("DrawerActivity", DrawerActivity.class);
+        put("ProgressBarActivity", ProgressBarActivity.class);
+        put("StartActivity",StartActivity.class );
+        put("ContextCheckActivity1",ContextCheckActivity1.class );
+    }};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,53 +39,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void clickOverlay(View view){
-        Intent intent = new Intent(this, BaseActivity.class);
-        startActivity(intent);
-    }
-
-    public void clickListView(View view){
-        Intent intent = new Intent(this, ListViewActivity.class);
-        startActivity(intent);
-    }
-
-    public void clickLinearLayout(View view){
-        Intent intent = new Intent(this, LinearLayoutActivity.class);
-        startActivity(intent);
-    }
-
-    public void clickRipple(View view){
-        Intent intent = new Intent(this, RippleActivity.class);
-        startActivity(intent);
-    }
-
-    public void clickMultiTypeListView(View view){
-        Intent intent = new Intent(this, MultiTypeListActivity.class);
-        startActivity(intent);
-    }
-
-    public void clickDrawable(View view){
-        Intent intent = new Intent(this, DrawableActivity.class);
-        startActivity(intent);
-    }
-
-    public void clickDrawer(View view){
-        Intent intent = new Intent(this, DrawerActivity.class);
-        startActivity(intent);
-    }
-
-    public void clickProgressBar(View view){
-        Intent intent = new Intent(this, ProgressBarActivity.class);
-        startActivity(intent);
-    }
-
-    public void clickActivityResult(View view){
-        Intent intent = new Intent(this, StartActivity.class);
-        startActivity(intent);
-    }
-
-    public void clickContext(View view){
-        Intent intent = new Intent(this, ContextCheckActivity1.class);
+    public void dispatchActivity(View view) {
+        Intent intent = new Intent(this, dispatchMap.get(view.getTag().toString()));
         startActivity(intent);
     }
 }

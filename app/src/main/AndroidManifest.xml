@@ -37,7 +37,8 @@
         <activity android:name=".ProgressBar.ProgressBarActivity" />
         <activity android:name=".ActivityResult.StartActivity" />
         <activity android:name=".ActivityResult.ResultActivity" />
-        <activity android:name=".Application.ContextCheckActivity1"></activity>
+        <activity android:name=".Application.ContextCheckActivity1" />
+        <activity android:name=".looper.MyLooperActivity"></activity>
     </application>
 
 </manifest>

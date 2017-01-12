@@ -20,9 +20,9 @@ public class RawResourceTest {
 
     @Test
     public void testReadRaw() {
-        InputStream inputStream = InstrumentationRegistry.getTargetContext().getResources().openRawResource(R.raw.hoge);
+        InputStream inputStream = InstrumentationRegistry.getTargetContext().getResources().openRawResource(R.raw.fuga);
         try {
-            assertThat(IOUtils.readLines(inputStream, "UTF-8").get(0), is("hogehoge"));
+            assertThat(IOUtils.readLines(inputStream, "UTF-8").get(0), is("fugafuga"));
         } catch (IOException e) {
         } finally {
             IOUtils.closeQuietly(inputStream);

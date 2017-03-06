@@ -38,7 +38,8 @@
         <activity android:name=".ActivityResult.StartActivity" />
         <activity android:name=".ActivityResult.ResultActivity" />
         <activity android:name=".Application.ContextCheckActivity1" />
-        <activity android:name=".looper.MyLooperActivity"></activity>
+        <activity android:name=".looper.MyLooperActivity" />
+        <activity android:name=".Service.ServiceActivity"></activity>
     </application>
 
 </manifest>

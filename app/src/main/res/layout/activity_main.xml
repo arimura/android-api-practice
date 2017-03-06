@@ -23,42 +23,6 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="list view"
-        android:id="@+id/buttonListView"
-        android:onClick="dispatchActivity"
-        android:layout_below="@+id/buttonOverlay"
-        android:layout_alignRight="@+id/buttonOverlay"
-        android:layout_alignEnd="@+id/buttonOverlay"
-        android:tag="ListViewActivity" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ripple"
-        android:id="@+id/buttonRipple"
-        android:layout_below="@+id/buttonListView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="dispatchActivity"
-        android:layout_alignRight="@+id/buttonListView"
-        android:layout_alignEnd="@+id/buttonListView"
-        android:tag="RippleActivity" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Multi Type List View"
-        android:id="@+id/buttonMultiTypeListView"
-        android:layout_below="@+id/buttonRipple"
-        android:layout_alignRight="@+id/buttonRipple"
-        android:layout_alignEnd="@+id/buttonRipple"
-        android:onClick="dispatchActivity"
-        android:tag="MultiTypeListActivity"
-        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="Drawable"
         android:id="@+id/buttonDrawable"
         android:onClick="dispatchActivity"
@@ -66,18 +30,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:tag="DrawableActivity" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Drawer"
-        android:id="@+id/buttonDrawer"
-        android:layout_below="@+id/buttonDrawable"
-        android:layout_alignLeft="@+id/buttonListView"
-        android:layout_alignStart="@+id/buttonListView"
-        android:onClick="dispatchActivity"
-        android:tag="DrawerActivity"
-        />
 
     <Button
         android:layout_width="wrap_content"
@@ -91,17 +43,6 @@
         android:tag="ProgressBarActivity" />
 
     <Button
-        android:text="Activity Result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttonShowActivityResult"
-        android:onClick="dispatchActivity"
-        android:layout_below="@+id/buttonProgressBar"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:tag="StartActivity" />
-
-    <Button
         android:text="context"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -113,13 +54,80 @@
         android:tag="ContextCheckActivity1" />
 
     <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="list view"
+        android:id="@+id/buttonListView"
+        android:onClick="dispatchActivity"
+        android:tag="ListViewActivity"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/buttonDrawable"
+        android:layout_toEndOf="@+id/buttonDrawable" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ripple"
+        android:id="@+id/buttonRipple"
+        android:onClick="dispatchActivity"
+        android:tag="RippleActivity"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/buttonListView"
+        android:layout_toEndOf="@+id/buttonListView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multi Type List View"
+        android:id="@+id/buttonMultiTypeListView"
+        android:onClick="dispatchActivity"
+        android:tag="MultiTypeListActivity"
+        android:layout_below="@+id/buttonOverlay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drawer"
+        android:id="@+id/buttonDrawer"
+        android:onClick="dispatchActivity"
+        android:tag="DrawerActivity"
+        android:layout_below="@+id/buttonRipple"
+        android:layout_toRightOf="@+id/buttonListView"
+        android:layout_toEndOf="@+id/buttonListView" />
+
+    <Button
+        android:text="Activity Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonShowActivityResult"
+        android:onClick="dispatchActivity"
+        android:tag="StartActivity"
+        android:layout_below="@+id/buttonMultiTypeListView"
+        android:layout_toRightOf="@+id/buttonProgressBar"
+        android:layout_toEndOf="@+id/buttonProgressBar" />
+
+    <Button
         android:text="looper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/buttonLooper"
-        android:layout_below="@+id/button5"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:onClick="dispatchActivity"
-        android:tag="MyLooperActivity" />
+        android:tag="MyLooperActivity"
+        android:layout_below="@+id/buttonDrawable"
+        android:layout_toRightOf="@+id/buttonOverlay"
+        android:layout_toEndOf="@+id/buttonOverlay" />
+
+    <Button
+        android:text="Service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonShowActivityResult"
+        android:layout_alignLeft="@+id/buttonDrawer"
+        android:layout_alignStart="@+id/buttonDrawer"
+        android:id="@+id/buttonService"
+        android:tag="ServiceActivity"
+        android:onClick="dispatchActivity"
+        />
 </RelativeLayout>

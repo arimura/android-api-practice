@@ -15,6 +15,7 @@ import com.hormiga6.androidapipractice.MultiTypeList.MultiTypeListActivity;
 import com.hormiga6.androidapipractice.NavigationDrawer.DrawerActivity;
 import com.hormiga6.androidapipractice.ProgressBar.ProgressBarActivity;
 import com.hormiga6.androidapipractice.Ripple.RippleActivity;
+import com.hormiga6.androidapipractice.Service.ServiceActivity;
 import com.hormiga6.androidapipractice.looper.MyLooperActivity;
 
 import java.util.HashMap;
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         put("StartActivity",StartActivity.class );
         put("ContextCheckActivity1",ContextCheckActivity1.class );
         put("MyLooperActivity",MyLooperActivity.class );
+        put("ServiceActivity",ServiceActivity.class );
     }};
 
     @Override

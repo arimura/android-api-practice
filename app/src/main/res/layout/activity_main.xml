@@ -130,4 +130,18 @@
         android:tag="ServiceActivity"
         android:onClick="dispatchActivity"
         />
+
+    <Button
+        android:text="UncaughtException"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonShowActivityResult"
+        android:layout_alignLeft="@+id/buttonDrawer"
+        android:layout_alignStart="@+id/buttonDrawer"
+        android:id="@+id/buttonUncaughtException"
+        android:tag="UncaughtActivity"
+        android:onClick="dispatchActivity"
+    />
+
+
 </RelativeLayout>

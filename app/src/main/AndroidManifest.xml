@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hormiga6.androidapipractice">
+          package="com.hormiga6.androidapipractice">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -12,34 +12,36 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".ActivityOverlay.BaseActivity"
             android:label="@string/title_activity_base"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".ActivityOverlay.OverlayActivity"
             android:label="@string/title_activity_overlay"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity android:name=".ListView.ListViewActivity" />
-        <activity android:name=".Layout.LinearLayoutActivity" />
-        <activity android:name=".Ripple.RippleActivity" />
-        <activity android:name=".MultiTypeList.MultiTypeListActivity" />
-        <activity android:name=".Drawable.DrawableActivity" />
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name=".ListView.ListViewActivity"/>
+        <activity android:name=".Layout.LinearLayoutActivity"/>
+        <activity android:name=".Ripple.RippleActivity"/>
+        <activity android:name=".MultiTypeList.MultiTypeListActivity"/>
+        <activity android:name=".Drawable.DrawableActivity"/>
         <activity
             android:name=".NavigationDrawer.DrawerActivity"
             android:label="@string/title_activity_drawer"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ProgressBar.ProgressBarActivity" />
-        <activity android:name=".ActivityResult.StartActivity" />
-        <activity android:name=".ActivityResult.ResultActivity" />
-        <activity android:name=".Application.ContextCheckActivity1" />
-        <activity android:name=".looper.MyLooperActivity" />
-        <activity android:name=".Service.ServiceActivity"></activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ProgressBar.ProgressBarActivity"/>
+        <activity android:name=".ActivityResult.StartActivity"/>
+        <activity android:name=".ActivityResult.ResultActivity"/>
+        <activity android:name=".Application.ContextCheckActivity1"/>
+        <activity android:name=".looper.MyLooperActivity"/>
+        <activity android:name=".Service.ServiceActivity"/>
+        <activity android:name=".UncaughtException.UncaughtExceptionActivity">
+        </activity>
     </application>
 
 </manifest>

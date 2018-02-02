@@ -18,7 +18,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:onClick="dispatchActivity"
-        android:tag="BaseActivity"/>
+        android:tag="ActivityOverlay.BaseActivity"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -29,7 +29,7 @@
         android:layout_below="@+id/buttonMultiTypeListView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:tag="DrawableActivity" />
+        android:tag="Drawable.DrawableActivity" />
 
     <Button
         android:layout_width="wrap_content"
@@ -40,7 +40,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:onClick="dispatchActivity"
-        android:tag="ProgressBarActivity" />
+        android:tag="ProgressBar.ProgressBarActivity" />
 
     <Button
         android:text="context"
@@ -51,7 +51,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:onClick="dispatchActivity"
-        android:tag="ContextCheckActivity1" />
+        android:tag="Application.ContextCheckActivity1" />
 
     <Button
         android:layout_width="wrap_content"
@@ -59,7 +59,7 @@
         android:text="list view"
         android:id="@+id/buttonListView"
         android:onClick="dispatchActivity"
-        android:tag="ListViewActivity"
+        android:tag="ListView.ListViewActivity"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/buttonDrawable"
         android:layout_toEndOf="@+id/buttonDrawable" />
@@ -70,7 +70,7 @@
         android:text="Ripple"
         android:id="@+id/buttonRipple"
         android:onClick="dispatchActivity"
-        android:tag="RippleActivity"
+        android:tag="Ripple.RippleActivity"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/buttonListView"
         android:layout_toEndOf="@+id/buttonListView" />
@@ -81,7 +81,7 @@
         android:text="Multi Type List View"
         android:id="@+id/buttonMultiTypeListView"
         android:onClick="dispatchActivity"
-        android:tag="MultiTypeListActivity"
+        android:tag="MultiTypeList.MultiTypeListActivity"
         android:layout_below="@+id/buttonOverlay"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -92,7 +92,7 @@
         android:text="Drawer"
         android:id="@+id/buttonDrawer"
         android:onClick="dispatchActivity"
-        android:tag="DrawerActivity"
+        android:tag="Drawable.DrawerActivity"
         android:layout_below="@+id/buttonRipple"
         android:layout_toRightOf="@+id/buttonListView"
         android:layout_toEndOf="@+id/buttonListView" />
@@ -103,7 +103,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/buttonShowActivityResult"
         android:onClick="dispatchActivity"
-        android:tag="StartActivity"
+        android:tag="ActivityResult.StartActivity"
         android:layout_below="@+id/buttonMultiTypeListView"
         android:layout_toRightOf="@+id/buttonProgressBar"
         android:layout_toEndOf="@+id/buttonProgressBar" />
@@ -114,7 +114,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/buttonLooper"
         android:onClick="dispatchActivity"
-        android:tag="MyLooperActivity"
+        android:tag="looper.MyLooperActivity"
         android:layout_below="@+id/buttonDrawable"
         android:layout_toRightOf="@+id/buttonOverlay"
         android:layout_toEndOf="@+id/buttonOverlay" />
@@ -127,7 +127,7 @@
         android:layout_alignLeft="@+id/buttonDrawer"
         android:layout_alignStart="@+id/buttonDrawer"
         android:id="@+id/buttonService"
-        android:tag="ServiceActivity"
+        android:tag="Service.ServiceActivity"
         android:onClick="dispatchActivity"
         />
 
@@ -139,7 +139,7 @@
         android:layout_alignLeft="@+id/buttonDrawer"
         android:layout_alignStart="@+id/buttonDrawer"
         android:id="@+id/buttonUncaughtException"
-        android:tag="UncaughtActivity"
+        android:tag="UncaughtException.UncaughtExceptionActivity"
         android:onClick="dispatchActivity"
     />
 

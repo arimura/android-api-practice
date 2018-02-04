@@ -142,6 +142,15 @@
         android:tag="UncaughtException.UncaughtExceptionActivity"
         android:onClick="dispatchActivity"
     />
+    <Button
+        android:id="@+id/buttonMemoryLeak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_below="@+id/button5"
+        android:layout_toLeftOf="@+id/buttonLooper" android:layout_toStartOf="@+id/buttonLooper"
+        android:text="Memory Leak"
+        android:tag="MemoryLeak.ParentActivity"
+        android:onClick="dispatchActivity"
+    />
 
 
 </RelativeLayout>

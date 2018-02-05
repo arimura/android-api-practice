@@ -3,6 +3,7 @@ package com.hormiga6.androidapipractice;
 import android.support.test.filters.SmallTest;
 import android.support.test.runner.AndroidJUnit4;
 
+import org.hamcrest.CoreMatchers;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.Test;
@@ -52,5 +53,12 @@ public class JSONObjectTest {
         }};
         JSONObject json = new JSONObject(map);
         assertThat(json.toString(), is("{\"key1\":false,\"key2\":\"false\"}"));
+    }
+
+    @Test
+    public void nullValue() throws JSONException {
+        JSONObject json = new JSONObject("{\"key1\":null}");
+        assertThat(json.isNull("key1"),is(true));
+        assertThat(json.getString("key1"), is("null"));
     }
 }

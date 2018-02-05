@@ -5,6 +5,7 @@ import android.support.test.filters.SmallTest;
 import android.support.test.runner.AndroidJUnit4;
 
 import org.apache.commons.io.IOUtils;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -20,9 +21,9 @@ public class RawResourceTest {
 
     @Test
     public void testReadRaw() {
-        InputStream inputStream = InstrumentationRegistry.getTargetContext().getResources().openRawResource(R.raw.fuga);
+        InputStream inputStream = InstrumentationRegistry.getTargetContext().getResources().openRawResource(R.raw.hoge);
         try {
-            assertThat(IOUtils.readLines(inputStream, "UTF-8").get(0), is("fugafuga"));
+            assertThat(IOUtils.readLines(inputStream, "UTF-8").get(0), is("hogehoge"));
         } catch (IOException e) {
         } finally {
             IOUtils.closeQuietly(inputStream);

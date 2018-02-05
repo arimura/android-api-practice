@@ -51,6 +51,6 @@ public class JSONObjectTest {
             put("key2","false");
         }};
         JSONObject json = new JSONObject(map);
-        assertThat(json.toString(), is("{\"key2\":\"false\",\"key1\":false}"));
+        assertThat(json.toString(), is("{\"key1\":false,\"key2\":\"false\"}"));
     }
 }

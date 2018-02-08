@@ -151,6 +151,15 @@
         android:tag="MemoryLeak.ParentActivity"
         android:onClick="dispatchActivity"
     />
+    <Button
+        android:id="@+id/buttonSQLite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_below="@+id/buttonLooper"
+        android:layout_toEndOf="@+id/buttonDrawable" android:layout_toRightOf="@+id/buttonDrawable"
+        android:text="SQLite"
+        android:tag="SQLite.SQLiteActivity"
+        android:onClick="dispatchActivity"
+    />
 
 
 </RelativeLayout>

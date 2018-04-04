@@ -29,8 +29,7 @@
         android:id="@+id/buttonShowListView"
         android:layout_below="@+id/buttonShowOverlayActivity"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="clickListView" />
+        android:layout_alignParentStart="true"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -39,6 +38,5 @@
         android:id="@+id/buttonShowLinearLayout"
         android:layout_below="@+id/buttonShowListView"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="clickLinearLayout" />
+        android:layout_alignParentStart="true"/>
 </RelativeLayout>

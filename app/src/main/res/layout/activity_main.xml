@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/baseLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -9,157 +12,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.hormiga6.androidapipractice.MainActivity">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Overylay"
-        android:id="@+id/buttonOverlay"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="dispatchActivity"
-        android:tag="ActivityOverlay.BaseActivity"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Drawable"
-        android:id="@+id/buttonDrawable"
-        android:onClick="dispatchActivity"
-        android:layout_below="@+id/buttonMultiTypeListView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:tag="Drawable.DrawableActivity" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Progress Bar"
-        android:id="@+id/buttonProgressBar"
-        android:layout_below="@+id/buttonDrawer"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="dispatchActivity"
-        android:tag="ProgressBar.ProgressBarActivity" />
-
-    <Button
-        android:text="context"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button5"
-        android:layout_below="@+id/buttonShowActivityResult"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="dispatchActivity"
-        android:tag="Application.ContextCheckActivity1" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="list view"
-        android:id="@+id/buttonListView"
-        android:onClick="dispatchActivity"
-        android:tag="ListView.ListViewActivity"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/buttonDrawable"
-        android:layout_toEndOf="@+id/buttonDrawable" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ripple"
-        android:id="@+id/buttonRipple"
-        android:onClick="dispatchActivity"
-        android:tag="Ripple.RippleActivity"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/buttonListView"
-        android:layout_toEndOf="@+id/buttonListView" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Multi Type List View"
-        android:id="@+id/buttonMultiTypeListView"
-        android:onClick="dispatchActivity"
-        android:tag="MultiTypeList.MultiTypeListActivity"
-        android:layout_below="@+id/buttonOverlay"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Drawer"
-        android:id="@+id/buttonDrawer"
-        android:onClick="dispatchActivity"
-        android:tag="Drawable.DrawerActivity"
-        android:layout_below="@+id/buttonRipple"
-        android:layout_toRightOf="@+id/buttonListView"
-        android:layout_toEndOf="@+id/buttonListView" />
-
-    <Button
-        android:text="Activity Result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttonShowActivityResult"
-        android:onClick="dispatchActivity"
-        android:tag="ActivityResult.StartActivity"
-        android:layout_below="@+id/buttonMultiTypeListView"
-        android:layout_toRightOf="@+id/buttonProgressBar"
-        android:layout_toEndOf="@+id/buttonProgressBar" />
-
-    <Button
-        android:text="looper"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/buttonLooper"
-        android:onClick="dispatchActivity"
-        android:tag="looper.MyLooperActivity"
-        android:layout_below="@+id/buttonDrawable"
-        android:layout_toRightOf="@+id/buttonOverlay"
-        android:layout_toEndOf="@+id/buttonOverlay" />
-
-    <Button
-        android:text="Service"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/buttonShowActivityResult"
-        android:layout_alignLeft="@+id/buttonDrawer"
-        android:layout_alignStart="@+id/buttonDrawer"
-        android:id="@+id/buttonService"
-        android:tag="Service.ServiceActivity"
-        android:onClick="dispatchActivity"
-        />
-
-    <Button
-        android:text="UncaughtException"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/buttonShowActivityResult"
-        android:layout_alignLeft="@+id/buttonDrawer"
-        android:layout_alignStart="@+id/buttonDrawer"
-        android:id="@+id/buttonUncaughtException"
-        android:tag="UncaughtException.UncaughtExceptionActivity"
-        android:onClick="dispatchActivity"
-    />
-    <Button
-        android:id="@+id/buttonMemoryLeak"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_below="@+id/button5"
-        android:layout_toLeftOf="@+id/buttonLooper" android:layout_toStartOf="@+id/buttonLooper"
-        android:text="Memory Leak"
-        android:tag="MemoryLeak.ParentActivity"
-        android:onClick="dispatchActivity"
-    />
-    <Button
-        android:id="@+id/buttonSQLite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" android:layout_below="@+id/buttonLooper"
-        android:layout_toEndOf="@+id/buttonDrawable" android:layout_toRightOf="@+id/buttonDrawable"
-        android:text="SQLite"
-        android:tag="SQLite.SQLiteActivity"
-        android:onClick="dispatchActivity"
-    />
-
-
-</RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activityList"
+        android:layout_width="0dp"
+        android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</android.support.constraint.ConstraintLayout>

@@ -16,6 +16,7 @@ import com.hormiga6.androidapipractice.ActivityOverlay.BaseActivity;
 import com.hormiga6.androidapipractice.ActivityResult.StartActivity;
 import com.hormiga6.androidapipractice.Application.ContextCheckActivity1;
 import com.hormiga6.androidapipractice.Drawable.DrawableActivity;
+import com.hormiga6.androidapipractice.Layout.ProgrammaticaLayoutlActivity;
 import com.hormiga6.androidapipractice.ListView.ListViewActivity;
 import com.hormiga6.androidapipractice.MemoryLeak.ParentActivity;
 import com.hormiga6.androidapipractice.MultiTypeList.MultiTypeListActivity;
@@ -63,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
             add(new DataSet("UncaughtExceptionActivity", UncaughtExceptionActivity.class));
             add(new DataSet("ParentActivity", ParentActivity.class));
             add(new DataSet("SQLiteActivity", SQLiteActivity.class));
+            add(new DataSet("ProgrammaticalLayoutActivity", ProgrammaticaLayoutlActivity.class));
         }};
 
         mAdapter = new MyAdapter(list);

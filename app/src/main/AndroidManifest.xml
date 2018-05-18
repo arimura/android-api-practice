@@ -50,6 +50,8 @@
         </activity>
         <activity android:name=".list.RecyclerViewActivity">
         </activity>
+        <activity android:name=".Layout.ProgrammaticaLayoutlActivity">
+        </activity>
     </application>
 
 </manifest>

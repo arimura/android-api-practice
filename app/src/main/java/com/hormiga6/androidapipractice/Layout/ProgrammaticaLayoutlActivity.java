@@ -54,5 +54,11 @@ public class ProgrammaticaLayoutlActivity extends AppCompatActivity {
         Button btn2 = new Button(this);
         btn2.setText("Button2");
         linLayout.addView(btn2, rightGravityParams);
+
+        LinearLayout.LayoutParams fixParams = new LinearLayout.LayoutParams(300, 300);
+
+        Button btn3 = new Button(this);
+        btn3.setText("Button3");
+        linLayout.addView(btn3, fixParams);
     }
 }

@@ -25,6 +25,7 @@ import com.hormiga6.androidapipractice.ProgressBar.ProgressBarActivity;
 import com.hormiga6.androidapipractice.Ripple.RippleActivity;
 import com.hormiga6.androidapipractice.SQLite.SQLiteActivity;
 import com.hormiga6.androidapipractice.Service.ServiceActivity;
+import com.hormiga6.androidapipractice.Surface.GameActivity;
 import com.hormiga6.androidapipractice.UncaughtException.UncaughtExceptionActivity;
 import com.hormiga6.androidapipractice.looper.MyLooperActivity;
 
@@ -65,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
             add(new DataSet("ParentActivity", ParentActivity.class));
             add(new DataSet("SQLiteActivity", SQLiteActivity.class));
             add(new DataSet("ProgrammaticalLayoutActivity", ProgrammaticaLayoutlActivity.class));
+            add(new DataSet("GameActivity", GameActivity.class));
         }};
 
         mAdapter = new MyAdapter(list);

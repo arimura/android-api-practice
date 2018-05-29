@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.hormiga6.androidapipractice.ActivityOverlay.BaseActivity;
 import com.hormiga6.androidapipractice.ActivityResult.StartActivity;
 import com.hormiga6.androidapipractice.Application.ContextCheckActivity1;
+import com.hormiga6.androidapipractice.Background.BackgroundActivity;
 import com.hormiga6.androidapipractice.Drawable.DrawableActivity;
 import com.hormiga6.androidapipractice.Layout.ProgrammaticaLayoutlActivity;
 import com.hormiga6.androidapipractice.ListView.ListViewActivity;
@@ -67,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
             add(new DataSet("SQLiteActivity", SQLiteActivity.class));
             add(new DataSet("ProgrammaticalLayoutActivity", ProgrammaticaLayoutlActivity.class));
             add(new DataSet("GameActivity", GameActivity.class));
+            add(new DataSet("BackgroundActivity", BackgroundActivity.class));
         }};
 
         mAdapter = new MyAdapter(list);

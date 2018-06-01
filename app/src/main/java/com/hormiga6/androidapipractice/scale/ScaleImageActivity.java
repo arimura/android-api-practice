@@ -20,7 +20,7 @@ public class ScaleImageActivity extends AppCompatActivity {
         setImage(bitmap, R.id.scaleImageView1, ImageView.ScaleType.CENTER_INSIDE);
         setImage(bitmap, R.id.scaleImageView2, ImageView.ScaleType.CENTER_CROP);
         setImage(bitmap, R.id.scaleImageView3, ImageView.ScaleType.FIT_XY);
-        setImage(bitmap, R.id.scaleImageView4, ImageView.ScaleType.FIT_END);
+        setImage(bitmap, R.id.scaleImageView4, ImageView.ScaleType.FIT_CENTER);
     }
 
     private void setImage(Bitmap bitmap, int id, ImageView.ScaleType scaleType) {

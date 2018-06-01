@@ -56,6 +56,8 @@
         </activity>
         <activity android:name=".Background.BackgroundActivity">
         </activity>
+        <activity android:name=".bitmap.BitmapActivity">
+        </activity>
     </application>
 
 </manifest>

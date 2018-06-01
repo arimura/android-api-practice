@@ -58,6 +58,8 @@
         </activity>
         <activity android:name=".bitmap.BitmapActivity">
         </activity>
+        <activity android:name=".scale.ScaleImageActivity">
+        </activity>
     </application>
 
 </manifest>

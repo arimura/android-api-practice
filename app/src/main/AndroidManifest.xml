@@ -60,6 +60,8 @@
         </activity>
         <activity android:name=".scale.ScaleImageActivity">
         </activity>
+        <activity android:name=".audio.AudioFocusActivity">
+        </activity>
     </application>
 
 </manifest>

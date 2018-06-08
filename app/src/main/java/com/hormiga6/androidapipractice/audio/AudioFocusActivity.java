@@ -35,22 +35,8 @@ public class AudioFocusActivity extends AppCompatActivity {
         initializeUI();
         initializeSeekbar();
         initializePlaybackController();
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
+        requestAudoFocus();
         mPlayerAdapter.loadMedia(MEDIA_RES_ID);
-    }
-
-    @Override
-    protected void onStop(){
-        super.onStop();
-        if(isChangingConfigurations() && mPlayerAdapter.isPlaying()){
-            Log.d(TAG, "onStop: don't stop becasue it's rotating");
-        }else {
-            mPlayerAdapter.release();
-        }
     }
 
     private void initializeUI(){
@@ -105,20 +91,33 @@ public class AudioFocusActivity extends AppCompatActivity {
         AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         //for android N and earlier
-        int focusRequest = audioManager.requestAudioFocus((int focusChange)-> {
+        int focusRequest = audioManager.requestAudioFocus(focusChange -> {
             String state = "";
             switch (focusChange) {
                 case AudioManager.AUDIOFOCUS_GAIN:
                     state = "GAIN";
+                    if(mPlayerAdapter != null){
+                        mPlayerAdapter.setVolume(1f);
+                    }
+                    if(!mPlayerAdapter.isPlaying()){
+                        mPlayerAdapter.play();
+                    }
                     break;
                 case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK:
                     state = "LOSS_TRANSIENT_CAN_DUCK";
+                    if(mPlayerAdapter != null && mPlayerAdapter.isPlaying()){
+                        mPlayerAdapter.setVolume(0.5f);
+                    }
                     break;
                 case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT:
                     state = "LOSS_TRANSIENT";
+                    if(mPlayerAdapter != null && mPlayerAdapter.isPlaying()){
+                        mPlayerAdapter.pause();
+                    }
                     break;
                 case AudioManager.AUDIOFOCUS_LOSS:
                     state = "LOSS";
+                    break;
                 default:
                     state = "unknown";
             }

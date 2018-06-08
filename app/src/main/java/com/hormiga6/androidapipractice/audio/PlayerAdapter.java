@@ -9,4 +9,5 @@ public interface PlayerAdapter {
     void pause();
     void initializeProgressCallback();
     void seekTo(int position);
+    void setVolume(float volume);
 }

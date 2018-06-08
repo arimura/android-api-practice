@@ -159,4 +159,11 @@ public class MediaPlayerHolder implements PlayerAdapter {
     public void seekTo(int position) {
 
     }
+
+    @Override
+    public void setVolume(float volume) {
+        if(mMediaPlayer != null){
+            mMediaPlayer.setVolume(volume, volume);
+        }
+    }
 }

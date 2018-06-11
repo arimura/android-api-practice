@@ -62,6 +62,8 @@
         </activity>
         <activity android:name=".audio.AudioFocusActivity">
         </activity>
+        <activity android:name=".view.GlobalVisibleRectActivity">
+        </activity>
     </application>
 
 </manifest>

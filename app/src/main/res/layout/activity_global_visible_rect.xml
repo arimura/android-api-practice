@@ -5,13 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.GlobalVisibleRectActivity"
-    android:onClick="checkGlobalVisibleRect">
+    android:onClick="checkGlobalVisibleRect"
+    tools:context=".view.GlobalVisibleRectActivity">
 
     <View
         android:id="@+id/view1"
         android:layout_width="100dp" android:layout_height="100dp"
-        android:background="@android:color/holo_blue_bright" app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/holo_blue_bright"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
     <View
         android:id="@+id/view3"

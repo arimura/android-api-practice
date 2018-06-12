@@ -6,6 +6,7 @@ import android.graphics.Point;
 import android.graphics.Rect;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
 import android.view.View;
@@ -65,5 +66,11 @@ public class GlobalVisibleRectActivity extends AppCompatActivity {
         Rect rect = new Rect();
         defaultDisplay.getRectSize(rect);
         Log.d(TAG, "default display rect: " + rect);
+
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        defaultDisplay.getMetrics(displayMetrics);
+        Log.d(TAG, "display metrics xdpi" + displayMetrics.xdpi);
+        Log.d(TAG, "display metrics w-pixel" + displayMetrics.widthPixels);
+        Log.d(TAG, "display metrics density" + displayMetrics.density);
     }
 }

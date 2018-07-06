@@ -10,6 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.hormiga6.androidapipractice.ActivityOverlay.BaseActivity;
@@ -33,6 +34,7 @@ import com.hormiga6.androidapipractice.bitmap.BitmapActivity;
 import com.hormiga6.androidapipractice.looper.MyLooperActivity;
 import com.hormiga6.androidapipractice.scale.ScaleImageActivity;
 import com.hormiga6.androidapipractice.view.GlobalVisibleRectActivity;
+import com.hormiga6.androidapipractice.window.WindowActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -56,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         // specify an adapter (see also next example)
 
         List<DataSet> list = new ArrayList<DataSet>(){{
+            add(new DataSet("WindowManager", WindowActivity.class));
             add(new DataSet("GlobalVisibleRectActivity", GlobalVisibleRectActivity.class));
             add(new DataSet("AudioFocusActivity", AudioFocusActivity.class));
             add(new DataSet("ScaleImageActivity", ScaleImageActivity.class));

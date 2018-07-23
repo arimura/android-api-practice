@@ -31,6 +31,7 @@ import com.hormiga6.androidapipractice.Surface.GameActivity;
 import com.hormiga6.androidapipractice.UncaughtException.UncaughtExceptionActivity;
 import com.hormiga6.androidapipractice.audio.AudioFocusActivity;
 import com.hormiga6.androidapipractice.bitmap.BitmapActivity;
+import com.hormiga6.androidapipractice.build.BuildActivity;
 import com.hormiga6.androidapipractice.connectivity.ConnectivityActivity;
 import com.hormiga6.androidapipractice.localbroadcast.LocalBroadcastActivity;
 import com.hormiga6.androidapipractice.looper.MyLooperActivity;
@@ -60,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         // specify an adapter (see also next example)
 
         List<DataSet> list = new ArrayList<DataSet>(){{
+            add(new DataSet("Build", BuildActivity.class));
             add(new DataSet("LocalBroadCaster", LocalBroadcastActivity.class));
             add(new DataSet("ConnectivityActivity", ConnectivityActivity.class));
             add(new DataSet("WindowManager", WindowActivity.class));

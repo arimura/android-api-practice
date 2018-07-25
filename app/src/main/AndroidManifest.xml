@@ -80,6 +80,8 @@
 
         <activity android:name=".build.BuildActivity">
         </activity>
+        <activity android:name=".disklrucache.DiskLruCacheActivity">
+        </activity>
     </application>
 
 </manifest>

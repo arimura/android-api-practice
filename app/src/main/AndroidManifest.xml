@@ -82,6 +82,8 @@
         </activity>
         <activity android:name=".disklrucache.DiskLruCacheActivity">
         </activity>
+        <activity android:name=".Layout.ViewAspectRatioActivity">
+        </activity>
     </application>
 
 </manifest>

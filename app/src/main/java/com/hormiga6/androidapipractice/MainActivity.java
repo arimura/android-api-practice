@@ -19,6 +19,7 @@ import com.hormiga6.androidapipractice.Application.ContextCheckActivity1;
 import com.hormiga6.androidapipractice.Background.BackgroundActivity;
 import com.hormiga6.androidapipractice.Drawable.DrawableActivity;
 import com.hormiga6.androidapipractice.Layout.ProgrammaticaLayoutlActivity;
+import com.hormiga6.androidapipractice.Layout.ViewAspectRatioActivity;
 import com.hormiga6.androidapipractice.ListView.ListViewActivity;
 import com.hormiga6.androidapipractice.MemoryLeak.ParentActivity;
 import com.hormiga6.androidapipractice.MultiTypeList.MultiTypeListActivity;
@@ -62,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
         // specify an adapter (see also next example)
 
         List<DataSet> list = new ArrayList<DataSet>(){{
+            add(new DataSet("Aspect Ratio", ViewAspectRatioActivity.class));
             add(new DataSet("DiskLruCache", DiskLruCacheActivity.class));
             add(new DataSet("Build", BuildActivity.class));
             add(new DataSet("LocalBroadCaster", LocalBroadcastActivity.class));

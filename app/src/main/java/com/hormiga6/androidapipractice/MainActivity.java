@@ -16,6 +16,7 @@ import android.widget.TextView;
 import com.hormiga6.androidapipractice.ActivityOverlay.BaseActivity;
 import com.hormiga6.androidapipractice.ActivityResult.StartActivity;
 import com.hormiga6.androidapipractice.Application.ContextCheckActivity1;
+import com.hormiga6.androidapipractice.Background.AsyncTaskActivity;
 import com.hormiga6.androidapipractice.Background.BackgroundActivity;
 import com.hormiga6.androidapipractice.Drawable.DrawableActivity;
 import com.hormiga6.androidapipractice.Layout.ProgrammaticaLayoutlActivity;
@@ -63,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         // specify an adapter (see also next example)
 
         List<DataSet> list = new ArrayList<DataSet>(){{
+            add(new DataSet("AsyncTask WorkQueue", AsyncTaskActivity.class));
             add(new DataSet("Aspect Ratio", ViewAspectRatioActivity.class));
             add(new DataSet("DiskLruCache", DiskLruCacheActivity.class));
             add(new DataSet("Build", BuildActivity.class));

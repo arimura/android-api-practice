@@ -2,8 +2,8 @@ package com.hormiga6.androidapipractice;
 
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.support.test.filters.SmallTest;
-import android.support.test.runner.AndroidJUnit4;
+import androidx.test.filters.SmallTest;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import com.hormiga6.androidapipractice.Parcel.FooParcelable;
 

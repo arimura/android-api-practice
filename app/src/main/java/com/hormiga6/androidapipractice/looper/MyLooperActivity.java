@@ -2,7 +2,7 @@ package com.hormiga6.androidapipractice.looper;
 
 import android.os.Bundle;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 

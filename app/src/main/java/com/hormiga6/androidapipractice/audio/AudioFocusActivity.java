@@ -1,25 +1,16 @@
 package com.hormiga6.androidapipractice.audio;
 
-import android.annotation.TargetApi;
 import android.content.Context;
-import android.content.res.AssetFileDescriptor;
-import android.media.AudioAttributes;
-import android.media.AudioFocusRequest;
 import android.media.AudioManager;
-import android.media.MediaPlayer;
-import android.os.Build;
-import android.support.annotation.RequiresApi;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 
 import com.hormiga6.androidapipractice.R;
-
-import java.io.IOException;
-import java.io.InputStream;
 
 public class AudioFocusActivity extends AppCompatActivity {
     private static final String TAG =  AudioFocusActivity.class.getSimpleName();

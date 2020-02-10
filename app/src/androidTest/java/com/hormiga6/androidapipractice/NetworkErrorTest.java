@@ -1,7 +1,7 @@
 package com.hormiga6.androidapipractice;
 
-import android.support.test.filters.SmallTest;
-import android.support.test.runner.AndroidJUnit4;
+import androidx.test.filters.SmallTest;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import org.junit.Ignore;
 import org.junit.Test;

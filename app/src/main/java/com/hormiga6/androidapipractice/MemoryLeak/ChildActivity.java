@@ -3,7 +3,7 @@ package com.hormiga6.androidapipractice.MemoryLeak;
 import android.app.Activity;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.hormiga6.androidapipractice.R;

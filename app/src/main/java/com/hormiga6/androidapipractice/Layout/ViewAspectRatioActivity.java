@@ -3,9 +3,8 @@ package com.hormiga6.androidapipractice.Layout;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -25,7 +24,7 @@ public class ViewAspectRatioActivity extends AppCompatActivity {
         int bitmapWidth = bitmap.getWidth();
         float aspectRatio = (float) bitmapWidth / bitmapHeight;
 
-        ImageView imageViewWithKeepingAspectRatio = new android.support.v7.widget.AppCompatImageView(this) {
+        ImageView imageViewWithKeepingAspectRatio = new androidx.appcompat.widget.AppCompatImageView(this) {
             @Override
             protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
                 int width = MeasureSpec.getSize(widthMeasureSpec);

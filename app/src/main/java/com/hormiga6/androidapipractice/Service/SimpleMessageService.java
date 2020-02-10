@@ -2,8 +2,8 @@ package com.hormiga6.androidapipractice.Service;
 
 import android.app.IntentService;
 import android.content.Intent;
-import android.content.Context;
-import android.support.v4.content.LocalBroadcastManager;
+
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import android.util.Log;
 
 public class SimpleMessageService extends IntentService {

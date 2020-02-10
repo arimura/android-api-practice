@@ -3,16 +3,13 @@ package com.hormiga6.androidapipractice.SQLite;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
 import com.hormiga6.androidapipractice.R;
 import com.hormiga6.androidapipractice.SQLite.FeedReaderContract.FeedEntry;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class SQLiteActivity extends AppCompatActivity {
 

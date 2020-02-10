@@ -1,7 +1,6 @@
 package com.hormiga6.androidapipractice.audio;
 
-import android.support.annotation.IntDef;
-import android.support.v4.media.session.PlaybackStateCompat;
+import androidx.annotation.IntDef;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

@@ -1,18 +1,15 @@
 package com.hormiga6.androidapipractice.MemoryLeak;
 
 import android.app.Activity;
-import android.app.ActivityManager;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
 import com.hormiga6.androidapipractice.R;
-
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class ParentActivity extends AppCompatActivity {
 

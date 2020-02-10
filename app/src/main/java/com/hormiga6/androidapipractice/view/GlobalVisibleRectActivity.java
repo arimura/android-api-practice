@@ -1,10 +1,9 @@
 package com.hormiga6.androidapipractice.view;
 
 import android.content.Context;
-import android.graphics.Path;
 import android.graphics.Point;
 import android.graphics.Rect;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;

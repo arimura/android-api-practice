@@ -3,10 +3,9 @@ package com.hormiga6.androidapipractice.bitmap;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 
 import com.hormiga6.androidapipractice.R;

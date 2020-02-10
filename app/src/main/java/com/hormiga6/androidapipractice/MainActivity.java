@@ -30,6 +30,7 @@ import com.hormiga6.androidapipractice.SQLite.SQLiteActivity;
 import com.hormiga6.androidapipractice.Service.ServiceActivity;
 import com.hormiga6.androidapipractice.Surface.GameActivity;
 import com.hormiga6.androidapipractice.UncaughtException.UncaughtExceptionActivity;
+import com.hormiga6.androidapipractice.WebView.WebViewActivity;
 import com.hormiga6.androidapipractice.audio.AudioFocusActivity;
 import com.hormiga6.androidapipractice.bitmap.BitmapActivity;
 import com.hormiga6.androidapipractice.build.BuildActivity;
@@ -63,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         // specify an adapter (see also next example)
 
         List<DataSet> list = new ArrayList<DataSet>(){{
+            add(new DataSet("WebView", WebViewActivity.class));
             add(new DataSet("AsyncTask WorkQueue", AsyncTaskActivity.class));
             add(new DataSet("Aspect Ratio", ViewAspectRatioActivity.class));
             add(new DataSet("DiskLruCache", DiskLruCacheActivity.class));

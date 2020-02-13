@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.webkit.DownloadListener;
 import android.webkit.WebChromeClient;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -24,8 +25,15 @@ public class WebViewActivity extends AppCompatActivity {
         webView = findViewById(R.id.web_view);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient(){
+            @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url){
-                Log.d("WBA shouldOverrideUrl", url);
+                Log.d("WBA shouldOverrideUrl 1", url);
+                return true;
+            }
+            @Override
+            public boolean shouldOverrideUrlLoading (WebView view,
+                                                     WebResourceRequest request){
+                Log.d("WBA shouldOverrideUrl 2", request.toString());
                 return true;
             }
         });
